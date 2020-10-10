@@ -50,7 +50,7 @@ public class TickerApplication {
 				while ((line = reader.readLine()) != null) {
 					responseContent.append(line);
 				}
-				reader.close();
+				reader.close(); 
 			}
 			PrintStream out = new PrintStream(new FileOutputStream("output.txt"));
 			out.append(responseContent.toString());
